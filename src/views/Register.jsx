@@ -51,6 +51,7 @@ function Register() {
               onChange={({ target }) => handledChange(target)}
               pattern="[A-Za-z0-9]{4,15}"
               title="Must be between 4 and 15 characters"
+              className="w-60 md:w-80"
               required
             />
           </div>
@@ -63,6 +64,7 @@ function Register() {
               onChange={({ target }) => handledChange(target)}
               pattern="[^]{4,20}"
               title="Must be between 4 and 20 characters"
+              className="w-60 md:w-80"
               required
             />
           </div>
@@ -75,6 +77,7 @@ function Register() {
               onChange={({ target }) => handledChange(target)}
               pattern="[^0-9]{4,50}"
               title="Must be between 4 and 50 characters"
+              className="w-60 md:w-80"
               required
             />
           </div>
@@ -85,6 +88,7 @@ function Register() {
               name="email"
               value={data.email || ""}
               onChange={({ target }) => handledChange(target)}
+              className="w-60 md:w-80"
               required
             />
           </div>
@@ -97,6 +101,7 @@ function Register() {
               onChange={({ target }) => handledChange(target)}
               pattern="[^]{4,300}"
               title="Must be between 4 and 300 characters"
+              className="w-60 md:w-80"
               required
             />
           </div>
@@ -109,6 +114,7 @@ function Register() {
               onChange={({ target }) => handledChange(target)}
               pattern="[^0-9]{4,20}"
               title="Must be between 4 and 20 characters"
+              className="w-60 md:w-80"
             />
           </div>
           <div className="input-group">
@@ -120,6 +126,7 @@ function Register() {
               onChange={({ target }) => handledChange(target)}
               pattern="[0-9]{4,20}"
               title="Must be between 4 and 20 characters"
+              className="w-60 md:w-80"
             />
           </div>
           <input className="btn-sgn" type="submit" value="Register" />
