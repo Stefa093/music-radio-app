@@ -14,7 +14,7 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className="App bg-slate-100 flex flex-wrap gap-5 justify-center items-center m-auto py-8">
       {products.map((product) => (
         <Card product={product} key={product.id} />
       ))}

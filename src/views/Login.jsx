@@ -27,15 +27,15 @@ function Login() {
         title: 'Error!',
         text: 'Email or Password are incorrect',
         icon: 'error',
-        confirmButtonText: 'Cool'
+        confirmButtonText: 'Ok'
       })
     }
     
   }
 
   return (
-    <div className="flex justify-center items-center h-full">
-    <div className="login flex flex-col w-80 m-auto justify-center shadow-xl rounded-lg py-5 px-8 relative">
+    <div className="flex justify-center items-center h-full bg-slate-100">
+    <div className="login flex flex-col w-80 m-auto justify-center shadow-xl rounded-lg py-5 px-8 relative bg-slate-50">
       <img className="rounded-full w-44 h-44 object-cover self-center mb-5 absolute top-0 translate-y-[-50%]" src={bg} alt="music_login" />
       <h1 className="text-5xl text-center mb-2 font-extrabold text-orange-400 pt-[5rem]">Welcome Back!</h1>
       <p className="py-5">Please enter to your account</p>

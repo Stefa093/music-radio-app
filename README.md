@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a web Music Store where you can buy all the music you want but for that you need to have an account, this app will let you create 
+This is a Music Store where you can buy all the music you want but for that you need to have an account, this app will let you create 
 a new account in case you don't have one or you can just login in your account and enjoy all the music we have.
 
 ## App Link
@@ -16,6 +16,8 @@ A list of technologies used within the project:
 * [Tailwind](https://tailwindcss.com/): Version 3.2.7
 * [Redux](https://react-redux.js.org/): Version 8.0.5
 * [React](https://react.dev/): Version 18.2.0
+* [Sweetalert2](https://www.npmjs.com/package/sweetalert2): Version 11.7.3
+
 
 ## Installation
 ***
@@ -23,8 +25,8 @@ You can install it from npm
 
 `$ npm create vite@latest`
 `$ npm install react-redux`
-`$ npm install redux`
-`$ npm install react-thunk`
+`$ npm install sweetalert2`
+`$ npm install @reduxjs/toolkit`
 `$ npm install -D tailwindcss postcss autoprefixer`
 `$ npm install react-router-dom`
 
