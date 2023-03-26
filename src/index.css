@@ -6,9 +6,18 @@
   box-sizing: border-box;
 }
 
+html,body {
+  height: 100%;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
+
+#root {
+  height: inherit
+}
+
 
 @tailwind base;
 @tailwind components;
@@ -24,7 +33,7 @@ body {
   }
 
   .btn-lgn {
-    @apply rounded-md border-0 px-5 py-1 my-5 font-bold cursor-pointer ml-20 bg-orange-300 hover:scale-105 hover:brightness-105 duration-500 text-lg;
+    @apply rounded-md border-0 px-5 py-1 my-5 font-bold cursor-pointer ml-20 bg-orange-300 hover:scale-105 hover:brightness-105 duration-300 text-lg;
   }
 
   .input-group {
@@ -32,6 +41,6 @@ body {
   }
 
   .btn-sgn {
-    @apply rounded-md border-0 px-5 py-1 my-5 font-bold cursor-pointer ml-20 bg-fuchsia-300 hover:scale-105 hover:brightness-105 duration-500 text-lg;
+    @apply rounded-md border-0 px-5 py-1 my-5 font-bold cursor-pointer ml-20 bg-fuchsia-300 hover:scale-105 hover:brightness-105 duration-300 text-lg;
   }
 }

@@ -5,7 +5,11 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'music.patern': "url('https://unsplash.com/es/fotos/hgO1wFPXl3I')"
+      }
+    },
   },
   plugins: [],
 }

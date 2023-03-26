@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux"
-import { logout } from "../store/action/authAction"
+import { logout } from "../store/slices/auth.slice"
 import './header.css'
 
 function Header () {

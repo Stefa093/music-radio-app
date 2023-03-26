@@ -1,12 +1,14 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { Link } from "react-router-dom";
-import { register } from "../store/action/authAction";
+import { Link, useNavigate } from "react-router-dom";
+import { register } from "../store/slices/auth.slice";
+import Swal from 'sweetalert2'
 
 function Register() {
 
     const [data, setData] = useState({})
     const dispatch = useDispatch()
+    const navigate = useNavigate()
 
     function handledChange({ name, value }) {
         setData({
@@ -18,9 +20,15 @@ function Register() {
         event.preventDefault()
         try {
           dispatch(register(data))
+          navigate('/login')
         } catch (error) {
           console.log(error);
-          window.alert("User already exists")
+          Swal.fire({
+            title: 'Error!',
+            text: 'User already exists',
+            icon: 'error',
+            confirmButtonText: 'Cool'
+          })
         }
         setData({})       
     }
@@ -48,7 +56,7 @@ function Register() {
             name="password"
             value={data.password || "" }
             onChange={({ target }) => handledChange(target)}
-            pattern="{4,20}"
+            pattern="[^]{4,20}"
             title="Must be between 4 and 20 characters"
             required
           />
@@ -82,7 +90,7 @@ function Register() {
             name="address"
             value={data.address || "" }
             onChange={({ target }) => handledChange(target)}
-            pattern="{4,300}"
+            pattern="[^]{4,300}"
             title="Must be between 4 and 300 characters"
             required
           />

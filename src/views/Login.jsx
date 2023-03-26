@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { login } from "../store/action/authAction";
+import { login } from "../store/slices/auth.slice";
+import Swal from 'sweetalert2'
+import { bg } from "../assets/images";
 
 function Login() {
   const [data, setData] = useState({});
@@ -21,15 +23,21 @@ function Login() {
       dispatch(login(data));
       navigate("/")
     } catch (error) {
-      window.alert("Email or Password are incorrect")
+      Swal.fire({
+        title: 'Error!',
+        text: 'Email or Password are incorrect',
+        icon: 'error',
+        confirmButtonText: 'Cool'
+      })
     }
     
   }
 
   return (
-    <div className="login flex flex-col w-80 m-auto justify-center shadow-xl rounded-lg my-56 py-5 px-8">
-      {/* <img src="https://unsplash.com/es/fotos/d7JCyFstmqM" alt="music_login" /> */}
-      <h1 className="text-5xl text-center mb-2 font-extrabold text-orange-400">Welcome Back!</h1>
+    <div className="flex justify-center items-center h-full">
+    <div className="login flex flex-col w-80 m-auto justify-center shadow-xl rounded-lg py-5 px-8 relative">
+      <img className="rounded-full w-44 h-44 object-cover self-center mb-5 absolute top-0 translate-y-[-50%]" src={bg} alt="music_login" />
+      <h1 className="text-5xl text-center mb-2 font-extrabold text-orange-400 pt-[5rem]">Welcome Back!</h1>
       <p className="py-5">Please enter to your account</p>
       <form onSubmit={handleSubmit}>
         <div className="input-group">
@@ -58,6 +66,8 @@ function Login() {
       </form>
       <p className="text-slate-400">Don't you have an account?</p>
       <Link className="text-end font-bold text-lg hover:underline hover:text-fuchsia-600 duration-300" to="/register">Sign Up</Link>
+      </div>
+      
     </div>
   );
 }
