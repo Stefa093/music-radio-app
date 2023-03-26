@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  input {
+    @apply max-w-lg rounded-md border outline-none pl-3 py-1 text-sm focus:shadow-lg duration-300;
+  }
+
+  label {
+    @apply mt-2 font-bold;
+  }
+
+  .btn-lgn {
+    @apply rounded-md border-0 px-5 py-1 my-5 font-bold cursor-pointer ml-20 bg-orange-300 hover:scale-105 hover:brightness-105 duration-500 text-lg;
+  }
+
+  .input-group {
+    @apply grid grid-cols-1;
+  }
+
+  .btn-sgn {
+    @apply rounded-md border-0 px-5 py-1 my-5 font-bold cursor-pointer ml-20 bg-fuchsia-300 hover:scale-105 hover:brightness-105 duration-500 text-lg;
+  }
+}
