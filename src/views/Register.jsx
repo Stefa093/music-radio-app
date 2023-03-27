@@ -39,9 +39,9 @@ function Register() {
 
   return (
     <div className="flex justify-center items-center h-full bg-slate-100 p-5">
-      <div className="bg-slate-50 shadow-lg rounded-xl m-auto w-[60%] h-auto absolute md:flex md:max-h-[90%] md:max-w-[70%] ">
+      <div className="bg-slate-50 shadow-lg rounded-xl m-auto w-[80%] h-auto absolute md:flex md:max-h-[90%] md:w-[70%] ">
         <img className="w-36 h-36 rounded-full m-auto relative top-0 md:rounded md:w-[50%] md:h-auto md:m-0" src={music} alt="" /> 
-        <form className="flex flex-col justify-center items-center md:w-[50%] max-h-[90%]" onSubmit={handleSubmit}>
+        <form className="flex flex-col justify-center items-center md:w-[50%] max-h-[90%] overflow-auto" onSubmit={handleSubmit}>
         <h1 className="text-4xl mb-5 font-extrabold text-fuchsia-600 p-5 text-center space-y-4">
           Create a new Account
         </h1>

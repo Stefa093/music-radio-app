@@ -7,7 +7,7 @@ a new account in case you don't have one or you can just login in your account a
 
 ## App Link
 
-https://music-radio-inc.netlify.app/login
+https://music-radio-inc.netlify.app/
 
 ## Technologies
 ***
