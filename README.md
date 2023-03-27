@@ -1,13 +1,13 @@
 # MUSIC RADIO APP
 
 ## Description
-
+***
 This is a Music Store where you can buy all the music you want but for that you need to have an account, this app will let you create 
 a new account in case you don't have one or you can just login in your account and enjoy all the music we have.
 
 ## App Link
 
-*
+https://music-radio-inc.netlify.app/login
 
 ## Technologies
 ***

@@ -1,4 +1,4 @@
-//Se destructura product desde la App.jsx para traer las propiedades de la api en la card
+//Se pasa los datos por props de todos los productos a nuestro componente card para poder pintar las tarjetas en la interfaz
 
 function Card({ product }) {
   return (

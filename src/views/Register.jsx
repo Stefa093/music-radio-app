@@ -5,6 +5,9 @@ import { register } from "../store/slices/auth.slice";
 import Swal from "sweetalert2";
 import { music } from "../assets/images";
 
+//se crea dos funciones: handleChange para llenar los campos requeridos en el estado data y handleSubmit nos permite enviar la información 
+//ingresada a nuestro estado global por medio de las acciones 
+
 function Register() {
   const [data, setData] = useState({});
   const dispatch = useDispatch();

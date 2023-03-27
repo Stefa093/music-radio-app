@@ -5,6 +5,10 @@ import { login } from "../store/slices/auth.slice";
 import Swal from 'sweetalert2'
 import { bg } from "../assets/images";
 
+//se  utiliza un estado para almacenar los datos del formulario y una vez que el usuario temine de llenar los datos 
+//se crea dos funciones: handleChange para llenar los campos requeridos en el estado data y handleSubmit nos permite enviar la información 
+//ingresada a nuestro estado global por medio de las acciones 
+
 function Login() {
   const [data, setData] = useState({});
   const dispatch = useDispatch();
